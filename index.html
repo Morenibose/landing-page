@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Lagos state, Nigeria, is one of the busiest commercial cities in Africa"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,13 +23,19 @@
       .logo {
         max-width: 150px;
         display: block;
-        margin: 20px auto;
+        margin: 30px auto;
+        padding: 30px;
       }
 
       h1 {
         color: #d3372e;
         font-family: "Playfair Display", serif;
+        font-size: 48px;
         text-align: center;
+      }
+
+      .container {
+        background-color: #e7f5fa;
       }
 
       .container-content {
@@ -70,7 +80,7 @@
       button {
         border: 2px;
         font-size: 24px;
-        border-radius: 4px;
+        border-radius: 5px;
         text-transform: uppercase;
         color: #dd0622;
         display: block;
@@ -83,12 +93,25 @@
         color: white;
         background: #dd0622;
       }
+
+      @media (max-width: 800px) {
+        h1 {
+          font-size: 16px;
+          text-align: center;
+        }
+        .image {
+          max-width: 250px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
     </style>
   </head>
   <body>
-    <img src="images/lagos logo.jpg" alt="Lagos State Logo" class="logo" />
-    <h1>Welcome to Lagos</h1>
     <div class="container">
+      <img src="images/lagos logo.jpg" alt="Lagos State Logo" class="logo" />
+      <h1>Welcome to Lagos - The Centre of Excellence</h1>
       <div class="container-content">
         <div class="content-wrapper">
           <p>
@@ -224,54 +247,55 @@
           >
             <p>Learn more on refinedng</p>
           </a>
+
+          <footer>
+            <a
+              href="mailto:morenike1adebayo@gmail.com"
+              class="email-link"
+              title="Email Morenike"
+              >morenike1adebayo@gmail.com</a
+            >
+
+            <a
+              href="https://www.instagram.com/@morenikeadebayo1"
+              target="_blank"
+              title="Instagram Page"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.github.com/Morenibose"
+              target="_blank"
+              title="Github Profile"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/morenike.adebayo"
+              target="_blank"
+              title="Facebook Page"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.twitter.com/@MorenikAdebayo"
+              target="_blank"
+              title="Twitter Profile"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </footer>
         </div>
-        <footer>
-          <a
-            href="mailto:morenike1adebayo@gmail.com"
-            class="email-link"
-            title="Email Morenike"
-            >morenike1adebayo@gmail.com</a
-          >
-
-          <a
-            href="https://www.instagram.com/@morenikeadebayo1"
-            target="_blank"
-            title="Instagram Page"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.github.com/Morenibose"
-            target="_blank"
-            title="Github Profile"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/morenike.adebayo"
-            target="_blank"
-            title="Facebook Page"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a
-            href="https://www.twitter.com/@MorenikAdebayo"
-            target="_blank"
-            title="Twitter Profile"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </footer>
       </div>
-    </div>
-    <button class="btn">Visit Lagos</button>
+      <button class="btn">Visit Lagos</button>
 
-    <script>
-      document.querySelector(".btn").addEventListener("click", function () {
-        let name = prompt("What is your name?");
-        let email = prompt("What is your email?");
-        if (name.length) {
-          alert("Thanks, " + name + " , we will get in touch!");
-        } else {
-          alert("No name, Please check back later!");
-        }
-      });
-    </script>
+      <script>
+        document.querySelector(".btn").addEventListener("click", function () {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+          if (name.length) {
+            alert("Thanks, " + name + " , we will get in touch!");
+          } else {
+            alert("No name, Please check back later!");
+          }
+        });
+      </script>
+    </div>
   </body>
 </html>
