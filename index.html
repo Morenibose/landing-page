@@ -18,8 +18,28 @@
       src="https://kit.fontawesome.com/3305bb4824.js"
       crossorigin="anonymous"
     ></script>
-    <title>Landing Page</title>
+    <title>Hometown Landing Page</title>
     <style>
+      nav {
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline;
+        list-style: none;
+        line-height: 40px;
+        margin-left: 10px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #d3372e;
+      }
+
       .logo {
         max-width: 150px;
         display: block;
@@ -35,16 +55,23 @@
       }
 
       .container {
-        background-color: #e7f5fa;
+        background-color: #cae6f0;
       }
 
       .container-content {
-        max-width: 800px;
+        max-width: 900px;
         margin: 50px auto;
       }
 
       .content-wrapper {
         margin-bottom: 50px;
+      }
+
+      button .highlights {
+        text-align: center;
+        font-size: 40px;
+        color: #dd0622;
+        font-family: "Playfair Display", serif;
       }
 
       .image {
@@ -94,14 +121,20 @@
         background: #dd0622;
       }
 
+      .source-code {
+        text-align: center;
+      }
+
       @media (max-width: 800px) {
         h1 {
           font-size: 16px;
           text-align: center;
         }
+
         .image {
           max-width: 250px;
         }
+
         p {
           font-size: 14px;
         }
@@ -109,6 +142,18 @@
     </style>
   </head>
   <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href=""> Home</a>
+          </li>
+          <li><a href=""> About </a></li>
+          <li><a href=""> Contact </a></li>
+          <li><a href=""> Work </a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
       <img src="images/lagos logo.jpg" alt="Lagos State Logo" class="logo" />
       <h1>Welcome to Lagos - The Centre of Excellence</h1>
@@ -123,7 +168,7 @@
             Airport offers domestic and international flights. Enjoy some Lagos
             highlights!
           </p>
-
+          <button class="highlights">HIGHLIGHTS</button>
           <img
             src="images/eyo.jpg"
             alt="Eyo Festival"
@@ -296,6 +341,13 @@
           }
         });
       </script>
+
+      <p class="source-code">
+        This project was coded by Morenike Adebayo, and it is
+        <a href="https://github.com/Morenibose/landing-page" target="_blank">
+          open-sourced</a
+        >
+      </p>
     </div>
   </body>
 </html>
