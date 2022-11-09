@@ -20,7 +20,8 @@
     ></script>
     <title>Hometown Landing Page</title>
     <style>
-      nav {
+      .nav-container {
+        background-color: #cee6f0;
       }
 
       nav ul {
@@ -55,7 +56,12 @@
       }
 
       .container {
-        background-color: #cae6f0;
+        background-image: linear-gradient(
+            rgba(196, 219, 248, 0.5),
+            rgba(219, 237, 248, 0.322)
+          ),
+          url("../landing-page/images/lagos-map.jpg");
+        background-size: contain;
       }
 
       .container-content {
@@ -67,11 +73,15 @@
         margin-bottom: 50px;
       }
 
-      button .highlights {
+      .highlights {
+        background-color: transparent;
+        border: 2px solid #dd0622;
+        border-radius: 40px;
         text-align: center;
         font-size: 40px;
         color: #dd0622;
         font-family: "Playfair Display", serif;
+        padding: 20px 30px;
       }
 
       .image {
@@ -84,9 +94,14 @@
         text-decoration: none;
       }
 
+      a:hover {
+        color: #dd0622;
+      }
+
       p {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
+        font-weight: bolder;
       }
 
       footer a {
@@ -105,7 +120,8 @@
       }
 
       button {
-        border: 2px;
+        background-color: transparent;
+        border: 1px solid #dd0622;
         font-size: 24px;
         border-radius: 5px;
         text-transform: uppercase;
@@ -142,7 +158,7 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="nav-container">
       <nav>
         <ul>
           <li>
@@ -165,10 +181,17 @@
             and east by the State of Ogun, to the south by the Bight of Benin,
             and to the west by the Republic of Benin. The city serves as the
             western terminus of the nation's road and rail networks, and Ikeja
-            Airport offers domestic and international flights. Enjoy some Lagos
-            highlights!
+            Airport offers domestic and international flights. The city has been
+            dubbed the cultural, financial, and entertainment capital of Africa
+            and has a substantial impact on business, leisure, technology,
+            education, politics, tourism, the arts, and fashion. Lagos is also
+            one of the 10 cities and urban areas in the world with the fastest
+            rate of population growth. The megacity boasts the fourth-highest
+            GDP in Africa and one of the biggest and busiest seaports on the
+            continent. One of Sub-Saharan Africa's most important centers for
+            education and culture is the Lagos metropolitan area.
           </p>
-          <button class="highlights">HIGHLIGHTS</button>
+          <button class="highlights">Enjoy some Lagos highlights!</button>
           <img
             src="images/eyo.jpg"
             alt="Eyo Festival"
